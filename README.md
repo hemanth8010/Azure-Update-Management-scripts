@@ -19,3 +19,5 @@ Next time the update deployment is triggered, it will first turn on all the VMs 
 During this execution, it will try to find if there are any hostpools in the resource group and sets the drain mode to On if the VM it is turning on is a part of the hostpool. It will then store the VMs in a Automation Variable.
 After the update, the Post-script will turn off the VMs that are previously turned on by the Pre-script.
 During this execution, the script will only target the VMs that were turned on by the Pre-script, set the drain mode to Off if they are session hosts to a particular hostpool in the same resource group while turning them off. 
+
+Happy updating/patching!!
